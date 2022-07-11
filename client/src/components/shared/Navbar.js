@@ -30,6 +30,7 @@ const Navbar = () => {
         <div>
             <nav>
               <Button event={() => {navigate("/")}}>Home</Button>
+              <Button event={() => {navigate("/image_upload")}}>Image upload demo</Button>
                     {renderNavItems()}
             </nav>
         </div>

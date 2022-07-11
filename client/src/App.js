@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UserAccount from './components/shared/UserAccount';
 import FetchUser from './components/auth/FetchUser';
+import ImageUpload from "./demos/ImageUpload";
 
 const App = () => (
   <>
@@ -20,6 +21,7 @@ const App = () => (
         <Route path="/register" element={<Register />} />
         <Route  element={<ProtectedRoute/>}>
             <Route path="/account" element={<UserAccount />} />
+            <Route path="/image_upload" element={<ImageUpload />} />
         </Route>
         <Route path="/*" element={<NoMatch />} />
       </Routes>
